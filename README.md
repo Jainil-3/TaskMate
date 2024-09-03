@@ -1,93 +1,92 @@
-# SYNCS_HACK
-
-Here's a basic `README.md` file for the **Neighborhood Helper** project. This file will help users understand what the app does, how to set it up, and how to contribute.
+Here's a template for a README file for your "Neighborhood Helper" project. You can customize it based on your specific project details.
 
 ---
 
-# Neighborhood Helper
+# TaskMate
 
-**Neighborhood Helper** is a community-focused web application that connects local residents who need help with tasks to volunteers in their area. Whether you're someone who needs assistance with a task or a volunteer looking to lend a hand, this app helps bring neighbors together.
+TaskMate is a community-driven web application that helps volunteers find and complete tasks for those in need within their neighborhood. The app allows users to view available tasks, volunteer to complete them, and track the time taken for each task.
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Features
 
-- **Post a Task:** Allows users to post tasks they need help with, including details like description, date, and time.
-- **Volunteer for a Task:** Volunteers can browse available tasks and sign up to help.
-- **Contact Us:** A simple contact form for users to reach out with questions or support requests.
-
-## Demo
-
-*Provide a link to a live demo if available or include screenshots of the app.*
+- **View Available Tasks:** Volunteers can browse tasks posted by people in their neighborhood.
+- **Volunteer for Tasks:** Users can volunteer to complete tasks and track the time spent.
+- **Task Management:** Once a task is completed, it is removed from the list and stored in a log.
+- **Time Tracking:** Volunteers can enter the time taken to complete a task, which is recorded for future reference.
 
 ## Installation
 
-### Prerequisites
+To get started with Neighborhood Helper, follow these steps:
 
-- Python 3.7+
-- pip (Python package installer)
-
-### Setup
-
-1. **Clone the Repository:**
+1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/neighborhood-helper.git
+   git clone git@github.com:your-username/neighborhood-helper.git
    cd neighborhood-helper
    ```
 
-2. **Create a Virtual Environment:**
+2. **Install the required dependencies:**
 
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-   ```
-
-3. **Install Dependencies:**
+   Ensure you have Python installed. You can install the required Python packages using pip:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Run the Application:**
+3. **Run the application:**
 
    ```bash
-   streamlit run app.py
+   streamlit run Home.py
    ```
 
-   The app will be available at `http://localhost:8501`.
+## Usage
+
+1. **Home Page:**
+   - Displays available tasks in the neighborhood.
+   - Allows volunteers to view task details and volunteer for them.
+
+2. **Volunteer Page:**
+   - Volunteers can track the time taken to complete tasks and submit it.
+
+3. **Task Management:**
+   - The application updates the task list by removing completed tasks and logging the time taken.
 
 ## Project Structure
 
+```plaintext
+neighborhood-helper/
+├── data/
+│   ├── tasks.csv              # CSV file storing available tasks
+│   ├── Time_to_Complete_Task.csv  # CSV file storing time completed for tasks
+├──pages/
+|   ├── 2_Post_Task.py
+|   ├── 3_Volunteer.py              # Volunteer page handling volunteer tasks
+|   ├── 4_Contact.py
+├──Home.py                    # Main application file for the home page
+├──Style/
+|   ├──style.css     
+├──
+└── README.md                  # This README file
 ```
-neighborhood_helper/
-│
-├── app.py               # Main Streamlit app file
-├── pages/               # Directory for different pages
-│   ├── home.py
-│   ├── post_task.py
-│   ├── volunteer.py
-│   ├── contact.py
-├── data/                # Directory for datasets or stored tasks
-│   ├── tasks.csv
-├── static/              # Directory for static files (e.g., images, CSS)
-│   ├── styles.css
-├── requirements.txt     # List of dependencies
-└── README.md            # Project documentation
-```
 
-## How to Contribute
+## Contributing
 
-Contributions are welcome! Here's how you can help:
-
-1. **Fork the repository.**
-2. **Create a new branch:** `git checkout -b feature-branch-name`
-3. **Make your changes and commit them:** `git commit -m 'Add some feature'`
-4. **Push to the branch:** `git push origin feature-branch-name`
-5. **Submit a pull request.**
+We welcome contributions to Neighborhood Helper! If you have any suggestions or improvements, feel free to fork the repository and create a pull request.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Contact
 
-If you have any questions, feel free to contact us via the contact page within the app or by email at `support@neighborhoodhelper.com`.
+
+---
+
+You can adjust the "Contact" section and the repository name based on your actual setup. If you need further customization or have additional sections you'd like to include, let me know!
