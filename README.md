@@ -1,5 +1,3 @@
-Here's a template for a README file for your "Neighborhood Helper" project. You can customize it based on your specific project details.
-
 ---
 
 # TaskMate
